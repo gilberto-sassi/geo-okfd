@@ -1,41 +1,55 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[12pt,]{article}
+\documentclass[
+  12pt,
+]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -45,25 +59,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-% set default figure placement to htbp
+% Set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
 \setlength{\topmargin}{-.5in}
@@ -130,7 +133,6 @@
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 \newtheorem*{solution}{Solution}
-\let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
 
 \title{HOW TO INTERPOLATE GEOGRAPHICALLY LOCATED CURVES: A PRECISE AND STRAIGHTFORWARD KRIGING APPROACH TO FUNCTION-VALUED DATA}
@@ -183,7 +185,7 @@ Nerini, Monestiez, and Manté (2010) generalized the method of kriging proposed 
 
 In this paper, we have observed \(n\) curves \(\chi_{\bm{s}_1}(t), \cdots, \chi_{\bm{s}_n}(t)\) at locations \(\bm{s}_1, \cdots, \bm{s}_n\) in a specified region,
 where \(\bm{s}_i = (\theta_i, \eta_i), \ i =1, \dots, n\), \(\theta_i\) is the latitute and \(\eta_i\) is the longitude. The aim is to estimate the unobserved curve
-\(\chi_{\bm{s}_0}(t)\) where \(\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}\). The ideia proposed by Giraldo, Delicado, and Mateu (2011) was uncomplicated:
+\(\chi_{\bm{s}_0}(t)\) where \(\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}\). The method proposed by Giraldo, Delicado, and Mateu (2011), and referred in this paper as Ordinary Kriging for Functional Data (OKFD), was uncomplicated:
 the curve \(\chi_{\bm{s}_0}(t)\) at \(\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}\) is a linear combination of all the curves \(\chi_{\bm{s}_1}(t), \cdots, \chi_{\bm{s}_n}(t)\), i.e.,
 \(\chi_{\bm{s}_0}(t) = \sum_{i=1}^{n} \lambda_i \chi_{\bm{s}_i}(t)\), where \(\lambda_1, \cdots, \lambda_n\) is the solution of the linear system
 \begin{equation*}
@@ -231,15 +233,15 @@ Traditionally, Statistics deals with information from observations \(x_1, \dots,
 observations are viewed as functions defined over some set \(B \subset \mathbb{R}^p, p \in \mathbb{N}\), usually \(p \in \{1,2\}\).\footnote{For more details about Functional Data Analysis, we suggest the textbooks of Ramsay (2006) and Horváth and Kokoszka (2012).} Before we consider the kriging methods for spatial functional data in Section \ref{sec:kriging}, we formally introduce some concepts about functional variable, functional data and functional dataset
 according to Ferraty and Vieu (2006).
 
-\BeginKnitrBlock{definition}
+\begin{definition}
 \protect\hypertarget{def:unnamed-chunk-1}{}{\label{def:unnamed-chunk-1} }A measurable function \(\bm{\chi}: \Omega \rightarrow L^2(B)\) is said to be a functional variable if its realizations (or values) are functions defined on \(B \subset \mathbb{R}^ p\) and assumed to belong to
 \[
     L^2(B) = \left\{\chi:B \longrightarrow \mathbb{R} \mid \int_B \sum_{k=1}^{p} \lvert \chi(u_k) \rvert^2 du_1\cdots du_p < \infty \right\}.
 \]
 An observation \(\chi\) of \(\bm{\chi}\) is referred to as functional data.
-\EndKnitrBlock{definition}
+\end{definition}
 
-\BeginKnitrBlock{remark}
+\begin{remark}
 \iffalse{} {Remark. } \fi{}
 
 \begin{enumerate}
@@ -247,11 +249,11 @@ An observation \(\chi\) of \(\bm{\chi}\) is referred to as functional data.
   \item When $p = 1$, a functional variable is called a random curve and a functional data is called a curve.
   \item We denote a functional variable by $\bm{\chi}(t)$ and a functional data by $\chi(t)$.
 \end{enumerate}
-\EndKnitrBlock{remark}
+\end{remark}
 
-\BeginKnitrBlock{definition}
+\begin{definition}
 \protect\hypertarget{def:unnamed-chunk-3}{}{\label{def:unnamed-chunk-3} }A functional dataset \(\chi_1(t), \dots, \chi_n(t)\) is a set of observations of \(n\) functional variables \(\bm{\chi}_1(t), \dots, \bm{\chi}_n(t)\).
-\EndKnitrBlock{definition}
+\end{definition}
 
 Generally, due to finite resolution, the curves in a functional dataset are available only at a finite grid of points and a smoothing technique is required.
 In this paper, we have used the Fourier Series to smooth these curves as explained in Section \ref{sec:kriging}.
@@ -262,32 +264,32 @@ In this paper, we have used the Fourier Series to smooth these curves as explain
 Throughout this paper, we assume a pointwise isotropic and weakly stationary spatial process. More precisely, let \(\bm{s}_i = (\theta_i, \eta_i) \in \mathbb{R}^2,\ i = 1, \dots, n\), be locations of a compact region \(D \in R^2\), where \(\theta_i\) and \(\eta_i\) are the latitude and the longitude, respectively, and \(\chi_{\bm{s}_i}(t), t \in T\), square-integrable curves, then we have
 
 \begin{enumerate}
-    \item $\espe (\chi_{\bm{s}}(t)) = \mu(t), \forall t \in T, \forall s \in D$,
-    \item $\cov(\chi_{\bm{s}_i}(t), \chi_{\bm{s}_j}(t)) = C(h;t), \forall \bm{s}_i, \bm{s}_j \in D, \forall t \in T$ and
+    \item $\mathop{\mathrm{E}}(\chi_{\bm{s}}(t)) = \mu(t), \forall t \in T, \forall s \in D$,
+    \item $\mathop{\mathrm{Cov}}(\chi_{\bm{s}_i}(t), \chi_{\bm{s}_j}(t)) = C(h;t), \forall \bm{s}_i, \bm{s}_j \in D, \forall t \in T$ and
     $h = \lVert\bm{s}_i -\bm{s}_j\rVert$, where $\lVert\bm{s}_i -\bm{s}_j\rVert$ is the Euclidean distance between $\bm{s}_i$ and $\bm{s}_j$,
-    \item $\dfrac{1}{2}\vari(\chi_{\bm{s}_i}(t)-\chi_{\bm{s}_j}(t))= \gamma(h;t), \forall \bm{s}_i, \bm{s}_j \in D, \forall t \in T, h = \lVert\bm{s}_i-\bm{s}_j\rVert$,
+    \item $\dfrac{1}{2}\mathop{\mathrm{Var}}(\chi_{\bm{s}_i}(t)-\chi_{\bm{s}_j}(t))= \gamma(h;t), \forall \bm{s}_i, \bm{s}_j \in D, \forall t \in T, h = \lVert\bm{s}_i-\bm{s}_j\rVert$,
 \end{enumerate}
 
 where \(D\) is a subset of \(\mathbb{R}^2\) containing a set with positive area.
 
-Suppose we have a functional dataset \(\chi_{\bm{s}_1}(t), \dots, \chi_{\bm{s}_n}(t)\) at locations \(\bm{s}_1, \dots, \bm{s}_n\) and the goal is to obtain an estimate for the curve \(\chi_{\bm{s}_0}(t)\) where \(\bm{s}_0 \not\in \{\bm{s}_1, \dots, \bm{s}_n\}\). Giraldo, Delicado, and Mateu (2011) proposed the following estimator:
+Suppose we have a functional dataset \(\chi_{\bm{s}_1}(t), \dots, \chi_{\bm{s}_n}(t)\) at locations \(\bm{s}_1, \dots, \bm{s}_n\) and the goal is to obtain an estimate for the curve \(\chi_{\bm{s}_0}(t)\) where \(\bm{s}_0 \not\in \{\bm{s}_1, \dots, \bm{s}_n\}\). The OKFD estimator is given by:
 \begin{equation}
 \hat\chi_{\bm{s}_0} (t) = \sum_{i=1}^{n} \hat\lambda_i \chi_{\bm{s}_i}(t),\quad \hat\lambda_1, \dots, \hat\lambda_{n} \in \mathbb{R},
 \label{eq:ModelOrdinary}
 \end{equation}
 where \(\hat\chi_{\bm{s}_0}(t)\) is called functional ordinary kriging predictor, and \(\hat\lambda_1\, \dots, \hat\lambda_{n}\) are the solution of the following nonlinear optimization problem
 \begin{equation}
-\argmin_{\hat{\lambda}_1, \dots, \hat{\lambda}_{n}} \espe \left[ \lVert\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t) \rVert^2_{L^2}\right] \mbox{ subject to }\espe(\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t)) =0, \forall t \in [0,1],
+\mathop{\mathrm{arg\,min}}_{\hat{\lambda}_1, \dots, \hat{\lambda}_{n}} \mathop{\mathrm{E}}\left[ \lVert\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t) \rVert^2_{L^2}\right] \mbox{ subject to }\mathop{\mathrm{E}}(\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t)) =0, \forall t \in [0,1],
 \label{eq:naoLinear}
 \end{equation}
 where \(\lVert(\chi(t))\rVert^2_{L^2}= \int_{T} \lvert \chi(t)\rvert^2 dt.\)
 
 In order to solve the optimization problem described by equation \eqref{eq:naoLinear}, the theorem \ref{thm:sistLinear}, proved by Giraldo, Delicado, and Mateu (2011), establishes an equivalence between solving this optimization problem and solving a linear system.
 
-\BeginKnitrBlock{theorem}
+\begin{theorem}
 \protect\hypertarget{thm:sistLinear}{}{\label{thm:sistLinear} }Under some regularity conditions, solving the nonlinear optimization problem
 \begin{equation*}
-    \argmin_{\hat{\lambda}_1, \dots, \hat{\lambda}_{n}} \espe \left[ \lVert\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t) \rVert_{L^2}^2\right] \mbox{ subject to }\espe(\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t)) =0, \forall t \in T,
+    \mathop{\mathrm{arg\,min}}_{\hat{\lambda}_1, \dots, \hat{\lambda}_{n}} \mathop{\mathrm{E}}\left[ \lVert\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t) \rVert_{L^2}^2\right] \mbox{ subject to }\mathop{\mathrm{E}}(\hat{\chi}_{\bm{s}_0}(t) - \chi_{\bm{s}_0}(t)) =0, \forall t \in T,
     \end{equation*}
 is equivalent to solve
 \begin{equation*}
@@ -316,7 +318,7 @@ is equivalent to solve
     \end{pmatrix},
     \end{equation*}
 where \(\mu\) is a constant and \(\gamma(h) = \int_T \gamma(h;t)dt\) is called trace-variogram.
-\EndKnitrBlock{theorem}
+\end{theorem}
 
 At each location \(\bm{s}_i, i=1, \dots, n\), we have a time series \(\chi_{\bm{s}_i}(t_j), j=1, \dots, m\), where \(t_j \in [-\pi, \pi]\).
 If we assume the curves \(\chi_{\bm{s}_i}(t), t\in [-\pi, \pi],\) are continuous, then these curves can be approximated by
@@ -445,7 +447,7 @@ and
 \end{align*}
 where \(\epsilon_t \sim N(0,1)\).
 
-Finally, we build time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m) \end{pmatrix}^\top\) for each location \(\bm{s}_i,\ i =0,1,\dots, n\), and we use the time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m) \end{pmatrix}^\top,\ i =1, \dots, n\) to estimate the curve \(\chi_{\bm{s}_0}(t)\), and then we compute a mean square error and a bias given by
+Finally, we build time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m) \end{pmatrix}^\top\) for each location \(\bm{s}_i,\ i =0,1,\dots, n\), and we use the time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m) \end{pmatrix}^\top,\ i =1, \dots, n\) to estimate the curve \(\chi_{\bm{s}_0}(t)\), and then we compute a mean square error and a bias measures given by
 \begin{align*}
  mse &=   \dfrac{1}{m} \sum_{k=1}^{m} (\chi_{\bm{s}_0}(t_k) - \hat{\chi}_{\bm{s}_0}(t_k))^2,\\
  bias &=   \dfrac{1}{m} \sum_{k=1}^{m} (\chi_{\bm{s}_0}(t_k) - \hat{\chi}_{\bm{s}_0}(t_k)).
@@ -470,7 +472,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of \(mse\) and \(bias
 
 \begin{table}[htbp]
  \centering
- \caption{Mean of $mse$ and $bias$ for normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo, Delicado, and Mateu (2011).}
+ \caption{Mean of $mse$ and $bias$ for normal simulated data. \textbf{New} refers to the new methodology proposed in this paper.}
  \label{tab:summary-normal}
   \begin{tabular}{ccc|cc}
   \toprule
@@ -488,7 +490,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of \(mse\) and \(bias
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_50.png} \label{fig:mse_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_75.png} \label{fig:mse_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_100.png} \label{fig:mse_100}}
-  \caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for normal dataset with L = 1000 replications.}
+  \caption{$mse$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -496,7 +498,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of \(mse\) and \(bias
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_50.png} \label{fig:bias_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_75.png} \label{fig:bias_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_100.png} \label{fig:bias_100}}
-  \caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for normal dataset with L = 1000 replications.}
+  \caption{$bias$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 \hypertarget{results-from-simulation-in-second-scenario}{%
@@ -508,7 +510,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
 
 \begin{table}[htbp]
   \centering
-  \caption{Mean of $mse$ and $bias$ for non-normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo, Delicado, and Mateu (2011).}
+  \caption{Mean of $mse$ and $bias$ for non-normal simulated data. \textbf{New} refers to the new methodology proposed in this paper.}
     \begin{tabular}{ccc|cc}
     \toprule
     \multirow{2}{*}{Number of locations} & \multicolumn{2}{c}{Mean of $mse$} & \multicolumn{2}{|c}{Mean of $bias$} \\ \cmidrule{2-5}
@@ -526,7 +528,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_50.png} \label{fig:mse_nonnormal_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_75.png} \label{fig:mse_nonnormal_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_100.png} \label{fig:mse_nonnormal_100}}
-  \caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for non-normal dataset with L = 1000 replications.}
+  \caption{$mse$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -534,7 +536,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_50.png} \label{fig:bias_nonnormal_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_75.png} \label{fig:bias_nonnormal_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_100.png} \label{fig:bias_nonnormal_100}}
-    \caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for non-normal dataset with L = 1000 replications.}
+    \caption{$bias$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 \newpage
@@ -553,18 +555,17 @@ considered in this paper.
     \label{fig:weather-stations}
 \end{figure}
 
-In order to compare the estimation method proposed in this paper with the method presented by Giraldo, Delicado, and Mateu (2011), we estimate the curve at each location in the dataset using all remaining curves in the dataset and for each station we have computed the following mean square error measure
+In order to compare the estimation method proposed in this paper with the OKFD estimation method, we estimate the curve at each location in the dataset using all remaining curves in the dataset and for each station we have computed the following mean square error measure
 \begin{align*}
  mse_i = \dfrac{1}{365} \sum_{j=1}^{365} (\chi_{\bm{s}_i}(t_j) - \hat\chi_{\bm{s}_i}(t_j))^2, \quad i =1, \dots, 35,
 \end{align*}
 where \(\hat\chi_{\bm{s}_i}(t_j), j=1, \dots, 365\) is the estimated curve and \(\chi_{\bm{s}_i}(t_j), j=1, \dots, 365\) is the observed time series,
 where \(t_j = -\pi + \dfrac{2\pi}{365-1}(j-1),\ j=1,\dots, 365\).
-We present the results in the Table \ref{tab:error}, and we conclude that the new proposed estimation method is a competitive estimation procedure for this dataset when compared to established estimation procedure of
-Giraldo, Delicado, and Mateu (2011). We show the box plot for \(mse_i, i=1, \dots, 35\) in the Figure \ref{fig:mse-app} and we also show the box plot for \(\log(mse_i), i=1, \dots, 35\) in the Figure \ref{fig:log-mse-app} in order to give a better insight of results.
+We present the results in the Table \ref{tab:error}, and we conclude that the new proposed estimation method is a competitive estimation procedure for this dataset when compared with the OKFD estimation method. We show the box plot for \(mse_i, i=1, \dots, 35\) in the Figure \ref{fig:mse-app} and we also show the box plot for \(\log(mse_i), i=1, \dots, 35\) in the Figure \ref{fig:log-mse-app} in order to give a better insight of results.
 
 \begin{table}[htbp]
   \centering
-  \caption{Mean of $mse$ of each station. \textbf{New} refers to the new methodology proposed in this work, and \textbf{OKFD} refers to metodology proposed by Giraldo, Delicado, and Mateu (2011).}
+  \caption{Mean of $mse$ of each station. \textbf{New} refers to the new methodology proposed in this work.}
     \begin{tabular}{lcc}
     \toprule
    \multirow{2}{*}{Mean of $mse_i, i=1,\dots, 35$} & New   & OKFD \\ \cmidrule{2-3}

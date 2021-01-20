@@ -111,7 +111,7 @@ In both methods, the weights are estimated by an unbiased minimum square error e
 
 In this paper, we have observed $n$ curves $\chi_{\bm{s}_1}(t), \cdots, \chi_{\bm{s}_n}(t)$ at locations $\bm{s}_1, \cdots, \bm{s}_n$ in a specified region,
 where $\bm{s}_i = (\theta_i, \eta_i), \ i =1, \dots, n$, $\theta_i$ is the latitute and $\eta_i$ is the longitude. The aim is to estimate the unobserved curve
-$\chi_{\bm{s}_0}(t)$ where $\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}$. The ideia proposed by @giraldo2011ordinary was uncomplicated:
+$\chi_{\bm{s}_0}(t)$ where $\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}$. The method proposed by @giraldo2011ordinary, and referred in this paper as Ordinary Kriging for Functional Data (OKFD), was uncomplicated:
 the curve $\chi_{\bm{s}_0}(t)$ at $\bm{s}_0 \not\in \{\bm{s}_1, \cdots \bm{s}_n \}$ is a linear combination of all the curves $\chi_{\bm{s}_1}(t), \cdots, \chi_{\bm{s}_n}(t)$, i.e.,
 $\chi_{\bm{s}_0}(t) = \sum_{i=1}^{n} \lambda_i \chi_{\bm{s}_i}(t)$, where $\lambda_1, \cdots, \lambda_n$ is the solution of the linear system
 \begin{equation*}
@@ -196,7 +196,7 @@ Throughout this paper, we assume a  pointwise isotropic and weakly stationary sp
 \end{enumerate}
 where $D$ is a subset of $\mathbb{R}^2$ containing a set with positive area.
 
-Suppose we have a functional dataset $\chi_{\bm{s}_1}(t), \dots, \chi_{\bm{s}_n}(t)$ at locations $\bm{s}_1, \dots, \bm{s}_n$ and the goal is to obtain an estimate for the curve $\chi_{\bm{s}_0}(t)$ where $\bm{s}_0 \not\in \{\bm{s}_1, \dots, \bm{s}_n\}$. @giraldo2011ordinary proposed the following estimator:
+Suppose we have a functional dataset $\chi_{\bm{s}_1}(t), \dots, \chi_{\bm{s}_n}(t)$ at locations $\bm{s}_1, \dots, \bm{s}_n$ and the goal is to obtain an estimate for the curve $\chi_{\bm{s}_0}(t)$ where $\bm{s}_0 \not\in \{\bm{s}_1, \dots, \bm{s}_n\}$. The OKFD estimator is given by:
 \begin{equation}
 \hat\chi_{\bm{s}_0} (t) = \sum_{i=1}^{n} \hat\lambda_i \chi_{\bm{s}_i}(t),\quad \hat\lambda_1, \dots, \hat\lambda_{n} \in \mathbb{R},
 (\#eq:ModelOrdinary)
@@ -374,7 +374,7 @@ and
 \end{align*}
 where $\epsilon_t \sim N(0,1)$.
 
-Finally, we build time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m)  \end{pmatrix}^\top\) for each location $\bm{s}_i,\ i =0,1,\dots, n$, and we use the time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m)  \end{pmatrix}^\top,\ i =1, \dots, n\) to estimate the curve $\chi_{\bm{s}_0}(t)$, and then we compute a mean square error and a bias  given by
+Finally, we build time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m)  \end{pmatrix}^\top\) for each location $\bm{s}_i,\ i =0,1,\dots, n$, and we use the time series \(\begin{pmatrix} \chi_{\bm{s}_i}(t_1) & \chi_{\bm{s}_i}(t_2) & \cdots & \chi_{\bm{s}_i}(t_m)  \end{pmatrix}^\top,\ i =1, \dots, n\) to estimate the curve $\chi_{\bm{s}_0}(t)$, and then we compute a mean square error and a bias measures  given by
 \begin{align*}
  mse &=   \dfrac{1}{m} \sum_{k=1}^{m} (\chi_{\bm{s}_0}(t_k) - \hat{\chi}_{\bm{s}_0}(t_k))^2,\\
  bias &=   \dfrac{1}{m} \sum_{k=1}^{m} (\chi_{\bm{s}_0}(t_k) - \hat{\chi}_{\bm{s}_0}(t_k)).
@@ -398,7 +398,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of  $mse$ and $bias$ 
 
 \begin{table}[htbp]
  \centering
- \caption{Mean of $mse$ and $bias$ for normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo, Delicado, and Mateu (2011).}
+ \caption{Mean of $mse$ and $bias$ for normal simulated data. \textbf{New} refers to the new methodology proposed in this paper.}
  \label{tab:summary-normal}
   \begin{tabular}{ccc|cc}
   \toprule
@@ -416,7 +416,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of  $mse$ and $bias$ 
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_50.png} \label{fig:mse_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_75.png} \label{fig:mse_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/mse_normal_100.png} \label{fig:mse_100}}
-  \caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for normal dataset with L = 1000 replications.}
+  \caption{$mse$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 
@@ -425,7 +425,7 @@ In the Table \ref{tab:summary-normal}, we present the mean of  $mse$ and $bias$ 
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_50.png} \label{fig:bias_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_75.png} \label{fig:bias_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/bias_normal_100.png} \label{fig:bias_100}}
-  \caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for normal dataset with L = 1000 replications.}
+  \caption{$bias$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 ##  RESULTS FROM SIMULATION IN SECOND SCENARIO {-}
@@ -436,7 +436,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
 
 \begin{table}[htbp]
   \centering
-  \caption{Mean of $mse$ and $bias$ for non-normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo, Delicado, and Mateu (2011).}
+  \caption{Mean of $mse$ and $bias$ for non-normal simulated data. \textbf{New} refers to the new methodology proposed in this paper.}
     \begin{tabular}{ccc|cc}
     \toprule
     \multirow{2}{*}{Number of locations} & \multicolumn{2}{c}{Mean of $mse$} & \multicolumn{2}{|c}{Mean of $bias$} \\ \cmidrule{2-5}
@@ -454,7 +454,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_50.png} \label{fig:mse_nonnormal_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_75.png} \label{fig:mse_nonnormal_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/mse_nonnormal_100.png} \label{fig:mse_nonnormal_100}}
-  \caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for non-normal dataset with L = 1000 replications.}
+  \caption{$mse$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 
@@ -463,7 +463,7 @@ This analysis can be visualized in the figures \ref{fig:mse_nonnormal_25}, \ref{
   \subfigure[$n=50$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_50.png} \label{fig:bias_nonnormal_50}}
   \subfigure[$n=75$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_75.png} \label{fig:bias_nonnormal_75}}
   \subfigure[$n=100$]{\includegraphics[width=.49\textwidth]{figure/bias_nonnormal_100.png} \label{fig:bias_nonnormal_100}}
-    \caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by Giraldo, Delicado, and Mateu (2011) (OKFD) for non-normal dataset with L = 1000 replications.}
+    \caption{$bias$ of the estimation method proposed (New) and the OKFD estimation method.}
 \end{figure}
 
 \newpage
@@ -482,17 +482,16 @@ knitr::include_graphics("figure/map_stations_canada.png")
     \label{fig:weather-stations}
 \end{figure}
 
-In order to compare the estimation method proposed in this paper with the method presented by @giraldo2011ordinary, we estimate the curve at each location in the dataset using all remaining curves in the dataset and for each station we have computed the following  mean square error measure
+In order to compare the estimation method proposed in this paper with the OKFD estimation method, we estimate the curve at each location in the dataset using all remaining curves in the dataset and for each station we have computed the following  mean square error measure
 \begin{align*}
  mse_i = \dfrac{1}{365} \sum_{j=1}^{365} (\chi_{\bm{s}_i}(t_j) - \hat\chi_{\bm{s}_i}(t_j))^2, \quad i =1, \dots, 35,
 \end{align*}
 where $\hat\chi_{\bm{s}_i}(t_j), j=1, \dots, 365$ is the estimated curve and $\chi_{\bm{s}_i}(t_j), j=1, \dots, 365$ is the observed time series,
 where $t_j = -\pi + \dfrac{2\pi}{365-1}(j-1),\ j=1,\dots, 365$.
-We present the results in the Table \ref{tab:error}, and we conclude  that the new proposed estimation method is a  competitive estimation procedure for this dataset when compared to established estimation procedure of
-@giraldo2011ordinary. We show the box plot for $mse_i, i=1, \dots, 35$ in the Figure \ref{fig:mse-app} and we also show the box plot for $\log(mse_i), i=1, \dots, 35$ in the Figure \ref{fig:log-mse-app} in order to give a better insight of results.
+We present the results in the Table \ref{tab:error}, and we conclude  that the new proposed estimation method is a  competitive estimation procedure for this dataset when compared with the OKFD estimation method. We show the box plot for $mse_i, i=1, \dots, 35$ in the Figure \ref{fig:mse-app} and we also show the box plot for $\log(mse_i), i=1, \dots, 35$ in the Figure \ref{fig:log-mse-app} in order to give a better insight of results.
 \begin{table}[htbp]
   \centering
-  \caption{Mean of $mse$ of each station. \textbf{New} refers to the new methodology proposed in this work, and \textbf{OKFD} refers to metodology proposed by Giraldo, Delicado, and Mateu (2011).}
+  \caption{Mean of $mse$ of each station. \textbf{New} refers to the new methodology proposed in this work.}
     \begin{tabular}{lcc}
     \toprule
    \multirow{2}{*}{Mean of $mse_i, i=1,\dots, 35$} & New   & OKFD \\ \cmidrule{2-3}
