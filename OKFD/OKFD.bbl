@@ -1,0 +1,129 @@
+\begin{thebibliography}{25}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\normalfont{#1}}
+\providecommand{\urlprefix}{}
+
+\bibitem[Basu et~al.(1998)]{basu1998robust}
+Basu, Ayanendranath, Ian~R Harris, Nils~L Hjort, and MC~Jones. 1998. ``Robust
+  and efficient estimation by minimising a density power divergence.''
+  \emph{Biometrika} 85 (3): 549--559.
+
+\bibitem[Beyaztas and Shang(2019)]{beyaztas2019forecasting}
+Beyaztas, Ufuk, and Han~Lin Shang. 2019. ``Forecasting functional time series
+  using weighted likelihood methodology.'' \emph{Journal of Statistical
+  Computation and Simulation} 89 (16): 3046--3060.
+
+\bibitem[Caballero, Giraldo, and Mateu(2013)]{caballero2013universal}
+Caballero, William, Ram{\'o}n Giraldo, and Jorge Mateu. 2013. ``A Universal
+  Kriging Approach for Spatial Functional Data.'' \emph{Stochastic
+  Environmental Research and Risk Assessment} 27 (7): 1553--1563.
+
+\bibitem[Chen, Goldsmith, and Ogden(2019)]{chen2018}
+Chen, Yakuan, Jeff Goldsmith, and R.~Todd Ogden. 2019. ``Functional Data
+  Analysis of Dynamic PET Data.'' \emph{Journal of the American Statistical
+  Association} 114 (526): 595--609.
+
+\bibitem[Fang et~al.(2020)]{kuangman2020}
+Fang, Kuangnan, Xiaochen Zhang, Shuangge Ma, and Qingzhao Zhang. 2020. ``Smooth
+  and locally sparse estimation for multiple-output functional linear
+  regression.'' \emph{Journal of Statistical Computation and Simulation} 90
+  (2): 341--354.
+
+\bibitem[Ferraty and Vieu(2006)]{ferraty2006nonparametric}
+Ferraty, Fr{\'e}d{\'e}ric, and Philippe Vieu. 2006. \emph{Nonparametric
+  Functional Data Analysis: Theory and Practice}. Springer-Verlag.
+
+\bibitem[Gabrys and Kokoszka(2007)]{gabrys2007portmanteau}
+Gabrys, Robertas, and Piotr Kokoszka. 2007. ``Portmanteau test of independence
+  for functional observations.'' \emph{Journal of the American Statistical
+  Association} 102 (480): 1338--1348.
+
+\bibitem[Giraldo, Delicado, and Mateu(2011)]{giraldo2011ordinary}
+Giraldo, R, P~Delicado, and J~Mateu. 2011. ``Ordinary Kriging for
+  Function-Valued Spatial Data.'' \emph{Environmental and Ecological
+  Statistics} 18 (3): 411--426.
+
+\bibitem[Giraldo, Delicado, and Mateu(2010)]{giraldo2010continuous}
+Giraldo, Ram{\'o}n, Pedro Delicado, and Jorge Mateu. 2010. ``Continuous
+  Time-Varying Kriging for Spatial Prediction of Functional Data: An
+  Environmental Application.'' \emph{Journal of agricultural, biological, and
+  environmental statistics} 15 (1): 66--82.
+
+\bibitem[Giraldo, Mateu, and Delicado(2012)]{giraldo2012geofd}
+Giraldo, Ram{\'o}n, Jorge Mateu, and Pedro Delicado. 2012. ``\texttt{geofd}: an
+  \texttt{R} Package for Function-Valued Geostatistical Prediction.''
+  \emph{Revista Colombiana de Estad{\'\i}stica} 35 (3): 385--407.
+
+\bibitem[Horv{\'a}th and Kokoszka(2012)]{horvath2012inference}
+Horv{\'a}th, Lajos, and Piotr Kokoszka. 2012. \emph{Inference for Functional
+  Data with Applications}. Vol. 200. Springer-Verlag.
+
+\bibitem[Ignaccolo, Mateu, and Giraldo(2014)]{ignaccolo2014kriging}
+Ignaccolo, Rosaria, Jorge Mateu, and Ramon Giraldo. 2014. ``Kriging with
+  External Drift for Functional Data for Air Quality Monitoring.''
+  \emph{Stochastic Environmental Research and Risk Assessment} 28 (5):
+  1171--1186.
+
+\bibitem[Khuri(2003)]{khuri2003advanced}
+Khuri, Andr{\'e}~I. 2003. \emph{Advanced calculus with applications in
+  statistics}. Vol. 486. John Wiley \& Sons.
+
+\bibitem[Lee, Zhu, and Toscas(2015)]{lee2015spatio}
+Lee, D-J, Z~Zhu, and P~Toscas. 2015. ``Spatio-Temporal Functional Data Analysis
+  for Wireless Sensor Networks Data.'' \emph{Environmetrics} 26 (5): 354--362.
+
+\bibitem[Lee et~al.(2019)]{lee2019bayesian}
+Lee, Wonyul, Michelle~F Miranda, Philip Rausch, Veerabhadran
+  Baladandayuthapani, Massimo Fazio, J~Crawford Downs, and Jeffrey~S Morris.
+  2019. ``Bayesian semiparametric functional mixed models for serially
+  correlated functional data, with application to glaucoma data.''
+  \emph{Journal of the American Statistical Association} 114 (526): 495--513.
+
+\bibitem[Menafoglio, Guadagnini, and Secchi(2014)]{menafoglio2014kriging}
+Menafoglio, Alessandra, Alberto Guadagnini, and Piercesare Secchi. 2014. ``A
+  Kriging Approach Based on Aitchison Geometry for the Characterization of
+  Particle-Size Curves in Heterogeneous Aquifers.'' \emph{Stochastic
+  Environmental Research and Risk Assessment} 28 (7): 1835--1851.
+
+\bibitem[Nerini, Monestiez, and Mant{\'e}(2010)]{nerini2010cokriging}
+Nerini, David, Pascal Monestiez, and Claude Mant{\'e}. 2010. ``Cokriging for
+  Spatial Functional Data.'' \emph{Journal of Multivariate Analysis} 101 (2):
+  409--418.
+
+\bibitem[Ramsay et~al.(2018)]{ramsay2018}
+Ramsay, J.~O., Hadley Wickham, Spencer Graves, and Giles Hooker. 2018.
+  \emph{fda: Functional Data Analysis}. R package version 2.4.8.
+
+\bibitem[Ramsay(2006)]{ramsay2006functional}
+Ramsay, James~O. 2006. \emph{Functional Data Analysis}. John Wiley \& Sons.
+
+\bibitem[Ramsay and Dalzell(1991)]{ramsay1991some}
+Ramsay, James~O, and CJ~Dalzell. 1991. ``Some Tools for Functional Data
+  Analysis.'' \emph{Journal of the Royal Statistical Society B} 53 (3):
+  539--572.
+
+\bibitem[Reyes, Giraldo, and Mateu(2012)]{reyesresidual}
+Reyes, Adriana, Ram{\'o}n Giraldo, and Jorge Mateu. 2012. ``Residual Kriging
+  for Functional Data. Application to the Spatial Prediction of Salinity
+  Curves.'' \emph{Revista Colombiana de Estad\'{\i}stica} 35 (3): 385--407.
+
+\bibitem[Salazar, Giraldo, and Porcu(2015)]{salazar2015spatial}
+Salazar, El{\'\i}as, Ram{\'o}n Giraldo, and Emilio Porcu. 2015. ``Spatial
+  Prediction for Infinite-Dimensional Compositional Data.'' \emph{Stochastic
+  Environmental Research and Risk Assessment} 29 (7): 1737--1749.
+
+\bibitem[Scott(2009)]{scott2009sturges}
+Scott, David~W. 2009. ``Sturges' rule.'' \emph{Wiley Interdisciplinary Reviews:
+  Computational Statistics} 1 (3): 303--306.
+
+\bibitem[Vale and Maurelli(1983)]{Vale1983}
+Vale, C.~David, and Vincent~A. Maurelli. 1983. ``Simulating multivariate
+  nonnormal distributions.'' \emph{Psychometrika} 48 (3): 465--471.
+
+\bibitem[Zamani, Hashemi, and Haghbin(2019)]{zamani2019improved}
+Zamani, Atefeh, Maryam Hashemi, and Hossein Haghbin. 2019. ``Improved
+  functional portmanteau tests.'' \emph{Journal of Statistical Computation and
+  Simulation} 89 (8): 1423--1436.
+
+\end{thebibliography}

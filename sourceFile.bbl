@@ -1,0 +1,168 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Basu et~al.(1998)Basu, Harris, Hjort, and Jones]{basu1998robust}
+A.~Basu, I.~R. Harris, N.~L. Hjort, and M.~Jones.
+\newblock Robust and efficient estimation by minimising a density power
+  divergence.
+\newblock {Biometrika}, 85\penalty0 (3):\penalty0 549--559, 1998.
+
+\bibitem[Beyaztas and Shang(2019)]{beyaztas2019forecasting}
+U.~Beyaztas and H.~L. Shang.
+\newblock Forecasting functional time series using weighted likelihood
+  methodology.
+\newblock {Journal of Statistical Computation and Simulation}, 89\penalty0
+  (16):\penalty0 3046--3060, 2019.
+
+\bibitem[Caballero et~al.(2013)Caballero, Giraldo, and
+  Mateu]{caballero2013universal}
+W.~Caballero, R.~Giraldo, and J.~Mateu.
+\newblock A universal kriging approach for spatial functional data.
+\newblock {Stochastic Environmental Research and Risk Assessment}, 27\penalty0
+  (7):\penalty0 1553--1563, 2013.
+
+\bibitem[Chen et~al.(2019)Chen, Goldsmith, and Ogden]{chen2018}
+Y.~Chen, J.~Goldsmith, and R.~T. Ogden.
+\newblock Functional data analysis of dynamic pet data.
+\newblock {Journal of the American Statistical Association}, 114\penalty0
+  (526):\penalty0 595--609, 2019.
+
+\bibitem[Fang et~al.(2020)Fang, Zhang, Ma, and Zhang]{kuangman2020}
+K.~Fang, X.~Zhang, S.~Ma, and Q.~Zhang.
+\newblock Smooth and locally sparse estimation for multiple-output functional
+  linear regression.
+\newblock {Journal of Statistical Computation and Simulation}, 90\penalty0
+  (2):\penalty0 341--354, 2020.
+
+\bibitem[Ferraty and Vieu(2006)]{ferraty2006nonparametric}
+F.~Ferraty and P.~Vieu.
+\newblock {Nonparametric Functional Data Analysis: Theory and Practice}.
+\newblock Springer-Verlag, 2006.
+
+\bibitem[Gabrys and Kokoszka(2007)]{gabrys2007portmanteau}
+R.~Gabrys and P.~Kokoszka.
+\newblock Portmanteau test of independence for functional observations.
+\newblock {Journal of the American Statistical Association}, 102\penalty0
+  (480):\penalty0 1338--1348, 2007.
+
+\bibitem[Giraldo et~al.(2010)Giraldo, Delicado, and
+  Mateu]{giraldo2010continuous}
+R.~Giraldo, P.~Delicado, and J.~Mateu.
+\newblock Continuous time-varying kriging for spatial prediction of functional
+  data: An environmental application.
+\newblock {Journal of agricultural, biological, and environmental statistics},
+  15\penalty0 (1):\penalty0 66--82, 2010.
+
+\bibitem[Giraldo et~al.(2011)Giraldo, Delicado, and Mateu]{giraldo2011ordinary}
+R.~Giraldo, P.~Delicado, and J.~Mateu.
+\newblock Ordinary kriging for function-valued spatial data.
+\newblock {Environmental and Ecological Statistics}, 18\penalty0 (3):\penalty0
+  411--426, 2011.
+
+\bibitem[Giraldo et~al.(2012)Giraldo, Mateu, and Delicado]{giraldo2012geofd}
+R.~Giraldo, J.~Mateu, and P.~Delicado.
+\newblock \texttt{geofd}: an \texttt{R} package for function-valued
+  geostatistical prediction.
+\newblock {Revista Colombiana de Estad{\'\i}stica}, 35\penalty0 (3):\penalty0
+  385--407, 2012.
+
+\bibitem[Horv{\'a}th and Kokoszka(2012)]{horvath2012inference}
+L.~Horv{\'a}th and P.~Kokoszka.
+\newblock {Inference for Functional Data with Applications}, volume 200.
+\newblock Springer-Verlag, 2012.
+
+\bibitem[Ignaccolo et~al.(2014)Ignaccolo, Mateu, and
+  Giraldo]{ignaccolo2014kriging}
+R.~Ignaccolo, J.~Mateu, and R.~Giraldo.
+\newblock Kriging with external drift for functional data for air quality
+  monitoring.
+\newblock {Stochastic Environmental Research and Risk Assessment}, 28\penalty0
+  (5):\penalty0 1171--1186, 2014.
+
+\bibitem[Khuri(2003)]{khuri2003advanced}
+A.~I. Khuri.
+\newblock {Advanced calculus with applications in statistics}, volume 486.
+\newblock John Wiley \& Sons, 2003.
+
+\bibitem[Lee et~al.(2015)Lee, Zhu, and Toscas]{lee2015spatio}
+D.-J. Lee, Z.~Zhu, and P.~Toscas.
+\newblock Spatio-temporal functional data analysis for wireless sensor networks
+  data.
+\newblock {Environmetrics}, 26\penalty0 (5):\penalty0 354--362, August 2015.
+
+\bibitem[Lee et~al.(2019)Lee, Miranda, Rausch, Baladandayuthapani, Fazio,
+  Downs, and Morris]{lee2019bayesian}
+W.~Lee, M.~F. Miranda, P.~Rausch, V.~Baladandayuthapani, M.~Fazio, J.~C. Downs,
+  and J.~S. Morris.
+\newblock Bayesian semiparametric functional mixed models for serially
+  correlated functional data, with application to glaucoma data.
+\newblock {Journal of the American Statistical Association}, 114\penalty0
+  (526):\penalty0 495--513, 2019.
+
+\bibitem[Menafoglio et~al.(2014)Menafoglio, Guadagnini, and
+  Secchi]{menafoglio2014kriging}
+A.~Menafoglio, A.~Guadagnini, and P.~Secchi.
+\newblock A kriging approach based on aitchison geometry for the
+  characterization of particle-size curves in heterogeneous aquifers.
+\newblock {Stochastic Environmental Research and Risk Assessment}, 28\penalty0
+  (7):\penalty0 1835--1851, 2014.
+
+\bibitem[Nerini et~al.(2010)Nerini, Monestiez, and
+  Mant{\'e}]{nerini2010cokriging}
+D.~Nerini, P.~Monestiez, and C.~Mant{\'e}.
+\newblock Cokriging for spatial functional data.
+\newblock {Journal of Multivariate Analysis}, 101\penalty0 (2):\penalty0
+  409--418, 2010.
+
+\bibitem[Ramsay(2006)]{ramsay2006functional}
+J.~O. Ramsay.
+\newblock {Functional Data Analysis}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem[Ramsay and Dalzell(1991)]{ramsay1991some}
+J.~O. Ramsay and C.~Dalzell.
+\newblock Some tools for functional data analysis.
+\newblock {Journal of the Royal Statistical Society B}, 53\penalty0
+  (3):\penalty0 539--572, 1991.
+
+\bibitem[Ramsay et~al.(2018)Ramsay, Wickham, Graves, and Hooker]{ramsay2018}
+J.~O. Ramsay, H.~Wickham, S.~Graves, and G.~Hooker.
+\newblock {fda: Functional Data Analysis}, 2018.
+\newblock R package version 2.4.8.
+
+\bibitem[Reyes et~al.(2012)Reyes, Giraldo, and Mateu]{reyesresidual}
+A.~Reyes, R.~Giraldo, and J.~Mateu.
+\newblock Residual kriging for functional data. application to the spatial
+  prediction of salinity curves.
+\newblock {Revista Colombiana de Estad\'{\i}stica}, 35\penalty0 (3):\penalty0
+  385--407, 2012.
+
+\bibitem[Salazar et~al.(2015)Salazar, Giraldo, and Porcu]{salazar2015spatial}
+E.~Salazar, R.~Giraldo, and E.~Porcu.
+\newblock Spatial prediction for infinite-dimensional compositional data.
+\newblock {Stochastic Environmental Research and Risk Assessment}, 29\penalty0
+  (7):\penalty0 1737--1749, October 2015.
+
+\bibitem[Scott(2009)]{scott2009sturges}
+D.~W. Scott.
+\newblock Sturges' rule.
+\newblock {Wiley Interdisciplinary Reviews: Computational Statistics},
+  1\penalty0 (3):\penalty0 303--306, 2009.
+
+\bibitem[Vale and Maurelli(1983)]{Vale1983}
+C.~D. Vale and V.~A. Maurelli.
+\newblock Simulating multivariate nonnormal distributions.
+\newblock {Psychometrika}, 48\penalty0 (3):\penalty0 465--471, Sep 1983.
+\newblock ISSN 1860-0980.
+
+\bibitem[Zamani et~al.(2019)Zamani, Hashemi, and Haghbin]{zamani2019improved}
+A.~Zamani, M.~Hashemi, and H.~Haghbin.
+\newblock Improved functional portmanteau tests.
+\newblock {Journal of Statistical Computation and Simulation}, 89\penalty0
+  (8):\penalty0 1423--1436, 2019.
+
+\end{thebibliography}

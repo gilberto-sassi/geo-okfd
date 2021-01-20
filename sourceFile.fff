@@ -1,0 +1,59 @@
+\begin{figure}[p]
+\subfloat[][$n=25$]{\includegraphics[width=.49\textwidth]{figure/mseNormal25.pdf} \label{fig:mse_25}}
+\subfloat[][$n=50$]{\includegraphics[width=.49\textwidth]{figure/mseNormal50.pdf} \label{fig:mse_50}} \\
+\subfloat[][$n=75$]{\includegraphics[width=.49\textwidth]{figure/mseNormal75.pdf} \label{fig:mse_75}}
+\subfloat[][$n=100$]{\includegraphics[width=.49\textwidth]{figure/mseNormal100.pdf} \label{fig:mse_100}}
+\caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by \citet{giraldo2011ordinary} (OKFD) for normal dataset with L = 1000 replications.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[p]
+\subfloat[][$n=25$]{\includegraphics[width=.49\textwidth]{figure/biasNormal25.pdf} \label{fig:bias_25}}
+\subfloat[][$n=50$]{\includegraphics[width=.49\textwidth]{figure/biasNormal50.pdf} \label{fig:bias_50}} \\
+\subfloat[][$n=75$]{\includegraphics[width=.49\textwidth]{figure/biasNormal75.pdf} \label{fig:bias_75}}
+\subfloat[][$n=100$]{\includegraphics[width=.49\textwidth]{figure/biasNormal100.pdf} \label{fig:bias_100}}
+\caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by \citet{giraldo2011ordinary} (OKFD) for normal dataset with L = 1000 replications.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[p]
+\subfloat[][$n=25$]{\includegraphics[width=.49\textwidth]{figure/mseNonnormal25.pdf} \label{fig:mse_nonnormal_25}}
+\subfloat[][$n=50$]{\includegraphics[width=.49\textwidth]{figure/mseNonnormal50.pdf} \label{fig:mse_nonnormal_50}}\\
+\subfloat[][$n=75$]{\includegraphics[width=.49\textwidth]{figure/mseNonnormal75.pdf} \label{fig:mse_nonnormal_75}}
+\subfloat[][$n=100$]{\includegraphics[width=.49\textwidth]{figure/mseNonnormal100.pdf} \label{fig:mse_nonnormal_100}}
+\caption{$mse$ of the estimation method proposed (New) and the estimation method proposed by \cite{giraldo2011ordinary} (OKFD) for non-normal dataset with L = 1000 replications.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[p]
+\subfloat[][$n=25$]{\includegraphics[width=.49\textwidth]{figure/biasNonnormal25.pdf} \label{fig:bias_nonnormal_25}}
+\subfloat[][$n=50$]{\includegraphics[width=.49\textwidth]{figure/biasNonnormal50.pdf} \label{fig:bias_nonnormal_50}}\\
+\subfloat[][$n=75$]{\includegraphics[width=.49\textwidth]{figure/biasNonnormal75.pdf} \label{fig:bias_nonnormal_75}}
+\subfloat[][$n=100$]{\includegraphics[width=.49\textwidth]{figure/biasNonnormal100.pdf} \label{fig:bias_nonnormal_100}}
+\caption{$bias$ of the estimation method proposed (New) and the estimation method proposed by \cite{giraldo2011ordinary} (OKFD) for non-normal dataset with L = 1000 replications.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.55\linewidth]{figure/mapStationsCanada}
+\caption{35 weather stations  of Canada.}
+\label{fig:weather-stations}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[p]
+\centering
+\subfloat[][Box plot for $mse_i$.]{\includegraphics[width=.49\textwidth]{figure/mseApp.pdf} \label{fig:mse-app}}
+\subfloat[][Box plot for $\log(mse_i)$.]{\includegraphics[width=0.49\linewidth]{figure/logMseApp.pdf} \label{fig:log-mse-app}}
+\caption{Boxplot for $mse_i$ and $\log(mse_i)$, $i=1, \dots, n$.}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htbp]
+\subfloat[][Station $\bm{s}_0$.]{\includegraphics[width=.325\textwidth]{figure/Edmonton.pdf} \label{fig:edmonton_station}}
+\hfill
+\subfloat[][Observed and estimated curve.]{\includegraphics[width=.49\textwidth]{figure/edmontonEstimation.pdf} \label{fig:curve_louisbourg}}
+
+\caption{Weather station located at Edmonton.}
+\end{figure}

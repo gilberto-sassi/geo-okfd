@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: OKFD.aux
+The style file: tfcad.bst
+Database file #1: refs.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty organization and address in ramsay2018
+You've used 25 entries,
+            3285 wiz_defined-function locations,
+            824 strings with 9273 characters,
+and the built_in function-call counts, 15544 in all, are:
+= -- 1287
+> -- 719
+< -- 2
++ -- 318
+- -- 200
+* -- 1192
+:= -- 2320
+add.period$ -- 102
+call.type$ -- 25
+change.case$ -- 171
+chr.to.int$ -- 26
+cite$ -- 26
+duplicate$ -- 1152
+empty$ -- 1163
+format.name$ -- 243
+if$ -- 3110
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 247
+newline$ -- 82
+num.names$ -- 75
+pop$ -- 561
+preamble$ -- 1
+purify$ -- 170
+quote$ -- 0
+skip$ -- 412
+stack$ -- 0
+substring$ -- 809
+swap$ -- 593
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 142
+warning$ -- 1
+while$ -- 113
+width$ -- 0
+write$ -- 278
+(There was 1 warning)

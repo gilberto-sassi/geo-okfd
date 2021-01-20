@@ -1,0 +1,42 @@
+\begin{table}[p]
+\centering
+\caption{Mean of $mse$ and $bias$ for normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo~\cite{giraldo2011ordinary}.}
+\label{tab:summary-normal}
+\begin{tabular}{ccc|cc}
+\toprule
+\multirow{2}{*}{Number of locations}& \multicolumn{2}{c|}{Mean of $mse$} & \multicolumn{2}{|c}{Mean of $bias$}\\ \cmidrule{2-5}
+& New & OKFD & New & OKFD \\ \midrule
+25 & $10.88$ & $21.08$ & $-0.02$ & $-0.03$\\
+50 & $9.47$ & $16.34$ & $-0.01$ & $-0.01$\\
+75 & $9.03$ & $15.98$ & $0.01$ & $0.00$\\
+100 & $8.70$ & $14.82$ & $-0.04$ & $-0.03$\\ \bottomrule
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[p]
+\centering
+\caption{Mean of $mse$ and $bias$ for non-normal simulated data. \textbf{New} refers to the new methodology proposed in this paper, and \textbf{OKFD} refers to methodology proposed by Giraldo~\cite{giraldo2011ordinary}.}
+\begin{tabular}{ccc|cc}
+\toprule
+\multirow{2}{*}{Number of locations} & \multicolumn{2}{c}{Mean of $mse$} & \multicolumn{2}{|c}{Mean of $bias$} \\ \cmidrule{2-5}
+& New   & OKFD  & New   & OKFD \\  \midrule
+25    & 13.23 & 21.58 & 0.00  & 0.02 \\
+50    & 12.44 & 19.01 & 0.05  & 0.04 \\
+75    & 11.91 & 18.43 & 0.02  & 0.03 \\
+100   & 11.59 & 18.75 & -0.05 & -0.04 \\ \bottomrule
+\end{tabular}
+\label{tab:summary-nonnormal}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[p]
+\centering
+\caption{Mean of $mse$ of each station. \textbf{New} refers to the new methodology proposed in this work, and \textbf{OKFD} refers to metodology proposed by \cite{giraldo2011ordinary}.}
+\begin{tabular}{lcc}
+\toprule
+\multirow{2}{*}{Mean of $mse_i, i=1,\dots, 35$} & New   & OKFD \\ \cmidrule{2-3}
+& 6.59  & 189.67 \\ \bottomrule
+\end{tabular}
+\label{tab:error}
+\end{table}

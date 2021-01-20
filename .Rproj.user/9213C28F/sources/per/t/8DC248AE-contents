@@ -1,0 +1,617 @@
+@Article{Einstein,
+  author =       "Albert Einstein",
+  title =        "{Zur Elektrodynamik Bewegter K{\"o}rper}. ({German})
+                 [{On} the Llectrodynamics of Moving Bodies]",
+  journal =      "Annalen der Physik",
+  volume =       "322",
+  number =       "10",
+  pages =        "891--921",
+  year =         "1905",
+  DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
+} 
+
+@article{giraldo2011ordinary,
+	title={Ordinary Kriging for Function-Valued Spatial Data},
+	author={Giraldo, R and Delicado, P and Mateu, J},
+	journal={Environmental and Ecological Statistics},
+	volume={18},
+	number={3},
+	pages={411--426},
+	year={2011},
+	publisher={Springer}
+}
+
+@article{giraldo2010continuous,
+	title={Continuous Time-Varying Kriging for Spatial Prediction of Functional Data: An Environmental Application},
+	author={Giraldo, Ram{\'o}n and Delicado, Pedro and Mateu, Jorge},
+	journal={Journal of agricultural, biological, and environmental statistics},
+	volume={15},
+	number={1},
+	pages={66--82},
+	year={2010},
+	publisher={Springer}
+}
+
+@article{goulard1992linear,
+	title={Linear Coregionalization Model: Tools for Estimation and Choice of Cross-Variogram Matrix},
+	author={Goulard, Michel and Voltz, Marc},
+	journal={Mathematical Geology},
+	volume={24},
+	number={3},
+	pages={269--286},
+	year={1992},
+	publisher={Springer}
+}
+
+@book{wackernagel2003multivariate,
+	title={Multivariate Geostatistics},
+	author={Wackernagel, Hans},
+	year={2003},
+	publisher={Springer}
+}
+
+@article{apanasovich2010cross,
+	title={Cross-covariance Functions for Multivariate Random Fields Based on Latent Dimensions},
+	author={Apanasovich, Tatiyana V and Genton, Marc G},
+	journal={Biometrika},
+	volume={97},
+	number={1},
+	pages={15--30},
+	year={2010},
+	publisher={Biometrika Trust}
+}
+
+@book{rue2005gaussian,
+	title={Gaussian Markov Random Fields: Theory and Applications},
+	author={Rue, Havard and Held, Leonhard},
+	year={2005},
+	publisher={CRC Press}
+}
+
+@book{ramsay2006functional,
+	title={Functional Data Analysis},
+	author={Ramsay, James O},
+	year={2006},
+	publisher={John Wiley \& Sons}
+}
+
+@book{todd1997essential,
+	title={Essential Wavelets for Statistical Applications and Data Analysis},
+	author={Todd Ogden},
+	year={1997},
+	publisher={Springer-Verlag}
+}
+
+@book{hardle1998wavelets,
+	title={Wavelets, Approximation, and Statistical Applications},
+	author={H{\"a}rdle, Wolfgang and Kerkyacharian, Gerard and Tsybakov, Alexander and Picard, Dominique},
+	year={1998},
+	publisher={Springer-Verlag}
+}
+
+@book{vidakovic2009statistical,
+	title={Statistical Modeling by Wavelets},
+	author={Vidakovic, Brani},
+	volume={503},
+	year={2009},
+	publisher={John Wiley \& Sons}
+}
+
+@book{cressie1993statistics,
+	title={Statistics for Spatial Data},
+	author={Cressie, Noel AC and Cassie, Noel A},
+	volume={900},
+	year={1993},
+	publisher={Wiley New York}
+}
+
+@book{bailey1995interactive,
+	title={Interactive Spatial Data Analysis},
+	author={Bailey, Trevor C and Gatrell, Anthony C},
+	volume={413},
+	year={1995},
+	publisher={Longman Scientific \& Technical Essex}
+}
+
+@book{fotheringham2013spatial,
+	title={Spatial Analysis and GIS},
+	author={Fotheringham, Stewart and Rogerson, Peter},
+	year={2013},
+	publisher={CRC Press}
+}
+
+@book{haining2003spatial,
+	title={Spatial Data Analysis},
+	author={Haining, Robert Patrick},
+	year={2003},
+	publisher={Cambridge University Press Cambridge}
+}
+
+@book{banerjee2014hierarchical,
+	title={Hierarchical Modeling and Analysis for Spatial Data},
+	author={Banerjee, Sudipto and Carlin, Bradley P and Gelfand, Alan E},
+	year={2014},
+	publisher={Crc Press}
+}
+
+@book{frederick1990map,
+	title={Map Projections: Theory and Applications},
+	author={Frederick Pearson, II},
+	year={1990},
+	publisher={CRC press}
+}
+
+@book{fourier1822theorie,
+	title={Theorie Analytique de la Chaleur, par M. Fourier},
+	author={Fourier, Joseph},
+	year={1822},
+	publisher={Chez Firmin Didot, p{\`e}re et fils}
+}
+
+@article{Haar1909,
+	author = {Haar, A., Kármán, Th. v.},
+	journal = {Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische Klasse},
+	language = {ger},
+	pages = {204-218},
+	title = {Zur Theorie der Spannungszustände in plastischen und sandartigen Medien},
+	volume = {1909},
+	year = {1909},
+}
+
+@article{daubechies1996wavelets,
+	title={Where do Wavelets Come From? A Personal Point of View},
+	author={Daubechies, Ingrid},
+	journal={Proceedings of the IEEE},
+	volume={84},
+	number={4},
+	pages={510--513},
+	year={1996},
+	publisher={IEEE}
+}
+
+@article{graps1995introduction,
+	title={An Introduction to Wavelets},
+	author={Graps, Amara},
+	journal={Computational Science \& Engineering, IEEE},
+	volume={2},
+	number={2},
+	pages={50--61},
+	year={1995},
+	publisher={IEEE}
+}
+
+@book{chui2014introduction,
+	title={An Introduction to Wavelets},
+	author={Chui, Charles K},
+	volume={1},
+	year={2014},
+	publisher={Academic Press}
+}
+
+@book{daubechies1992ten,
+	title={Ten Lectures on Wavelets},
+	author={Daubechies, Ingrid and others},
+	volume={61},
+	year={1992},
+	publisher={SIAM}
+}
+
+@book{boggess2009first,
+	title={A First Course in Wavelets with Fourier Analysis},
+	author={Boggess, Albert and Narcowich, Francis J},
+	year={2009},
+	publisher={John Wiley \& Sons}
+}
+
+@book{morettin1999ondas,
+	title={Ondas e Ondaletas: da An{\'a}lise de Fourier {\`a} An{\'a}lise de Ondaletas},
+	author={Morettin, Pedro Alberto},
+	year={1999},
+	publisher={Edusp}
+}
+
+@article{meyerwavelets,
+	title={Wavelets: Algorithms and Applications.},
+	author={Meyer, Y and Ryan, RD},
+	year = {1993},
+	journal={SIAM, Philadelphia, PA}
+}
+
+@book{ramsay2002applied,
+	title={Applied Functional Data Analysis: Methods and Case Studies},
+	author={Ramsay, James O and Silverman, Bernard W},
+	volume={77},
+	year={2002},
+	publisher={Springer-Verlag}
+}
+
+@book{horvath2012inference,
+	title={Inference for Functional Data with Applications},
+	author={Horv{\'a}th, Lajos and Kokoszka, Piotr},
+	volume={200},
+	year={2012},
+	publisher={Springer-Verlag}
+}
+
+@book{james2009functional,
+	title={Functional Data Analysis with \proglang{R} and \proglang{MATLAB}},
+	author={James O.. Ramsay and Hooker, Giles and Graves, Spencer},
+	year={2009},
+	publisher={Springer-Verlag}
+}
+
+@book{ferraty2006nonparametric,
+	title={Nonparametric Functional Data Analysis: Theory and Practice},
+	author={Ferraty, Fr{\'e}d{\'e}ric and Vieu, Philippe},
+	year={2006},
+	publisher={Springer-Verlag}
+}
+
+@BOOK{dias2010introducao,
+	AUTHOR =       {de Souza, Camila P. Estevam and Dias, Ronaldo},
+	TITLE =        {Introdu\c{c}\~{a}o \`{a} An\'{a}lise de Dados Funcionais},
+	PUBLISHER =    {Associa\c{c}\~{a}o Brasileira de Estat\'{\i}stica},
+	ADDRESS =      {S\~{a}o Paulo - SP},
+	YEAR =         {2010},
+}
+
+@article{bose1996invariant,
+	title={Invariant Tests for Spatial Stationarity Using Covariance Structure},
+	author={Bose, Sandip and Steinhardt, A},
+	journal={Signal Processing, IEEE Transactions on},
+	volume={44},
+	number={6},
+	pages={1523--1533},
+	year={1996},
+	publisher={IEEE}
+}
+
+@article{ephraty2001underwater,
+	title={Underwater Source Detection Using a Spatial Stationarity Test},
+	author={Ephraty, A and Tabrikian, J and Messer, H},
+	journal={The Journal of the Acoustical Society of America},
+	volume={109},
+	number={3},
+	pages={1053--1063},
+	year={2001},
+	publisher={Acoustical Society of America}
+}
+
+@article{fuentes2005formal,
+	title={A Formal Test for Nonstationarity of Spatial Stochastic Processes},
+	author={Fuentes, Montserrat},
+	journal={Journal of Multivariate Analysis},
+	volume={96},
+	number={1},
+	pages={30--54},
+	year={2005},
+	publisher={Elsevier}
+}
+
+@article{guan2004nonparametric,
+	title={A Nonparametric Test for Spatial Isotropy Using Subsampling},
+	author={Guan, Yongtao and Sherman, Michael and Calvin, James A},
+	journal={Journal of the American Statistical Association},
+	volume={99},
+	number={467},
+	pages={810--821},
+	year={2004},
+	publisher={Taylor \& Francis}
+}
+
+@article{cabana1987affine,
+	title={Affine Processes: a Test of Isotropy Based on Level Sets},
+	author={Cabana, EM},
+	journal={SIAM Journal on Applied Mathematics},
+	volume={47},
+	number={4},
+	pages={886--891},
+	year={1987},
+	publisher={SIAM}
+}
+
+@article{jona2001modeling,
+	title={Modeling and exploring multivariate spatial variation: A test procedure for isotropy of multivariate spatial data},
+	author={Jona-Lasinio, Giovanna},
+	journal={Journal of Multivariate Analysis},
+	volume={77},
+	number={2},
+	pages={295--317},
+	year={2001},
+	publisher={Elsevier}
+}
+
+@phdthesis{lu1994distributions,
+	title={On the Distributions of the Sample Covariogram and Semivariogram and their Use in Testing for Isotropy},
+	author={Lu, Hsiao-Chuan},
+	year={1994},
+	school={University of Iowa}
+}
+
+@article{lu2001testing,
+	title={Testing for Isotropy and Other Directional symmetry properties of spatial correlation},
+	author={Lu, H and Zimmerman, DL},
+	journal={preprint},
+	year={2001}
+}
+
+@article{molina2002method,
+	title={A Method for Testing Anisotropy and Quantifying Its Direction in Digital Images},
+	author={Molina, Andr{\'e}s and Feito, Francisco R},
+	journal={Computers \& Graphics},
+	volume={26},
+	number={5},
+	pages={771--784},
+	year={2002},
+	publisher={Elsevier}
+}
+
+@article{maity2012testing,
+	title={Testing for Spatial Isotropy under General Designs},
+	author={Maity, Arnab and Sherman, Michael},
+	journal={Journal of statistical planning and inference},
+	volume={142},
+	number={5},
+	pages={1081--1091},
+	year={2012},
+	publisher={Elsevier}
+}
+
+@article{bowman2013inference,
+	title={Inference for variograms},
+	author={Bowman, Adrian W and Crujeiras, Rosa M},
+	journal={Computational Statistics \& Data Analysis},
+	volume={66},
+	pages={19--31},
+	year={2013},
+	publisher={Elsevier}
+}
+
+
+@article{caballero2013universal,
+	title={A Universal Kriging Approach for Spatial Functional Data},
+	author={Caballero, William and Giraldo, Ram{\'o}n and Mateu, Jorge},
+	journal={Stochastic Environmental Research and Risk Assessment},
+	volume={27},
+	number={7},
+	pages={1553--1563},
+	year={2013},
+	publisher={Springer}
+}
+
+@article{ignaccolo2014kriging,
+	title={Kriging with External Drift for Functional Data for Air Quality Monitoring},
+	author={Ignaccolo, Rosaria and Mateu, Jorge and Giraldo, Ramon},
+	journal={Stochastic Environmental Research and Risk Assessment},
+	volume={28},
+	number={5},
+	pages={1171--1186},
+	year={2014},
+	publisher={Springer}
+}
+
+@article{ramsay1991some,
+	title={Some Tools for Functional Data Analysis},
+	author={Ramsay, James O and Dalzell, CJ},
+	journal={Journal of the Royal Statistical Society B },
+	volume = {53},
+	number = {3},
+	pages={539--572},
+	year={1991},
+	publisher={JSTOR}
+}
+
+@article{menafoglio2014kriging,
+	title={A Kriging Approach Based on Aitchison Geometry for the Characterization of Particle-Size Curves in Heterogeneous Aquifers},
+	author={Menafoglio, Alessandra and Guadagnini, Alberto and Secchi, Piercesare},
+	journal={Stochastic Environmental Research and Risk Assessment},
+	volume={28},
+	number={7},
+	pages={1835--1851},
+	year={2014},
+	publisher={Springer}
+}
+
+@article{reyesresidual,
+	title={Residual Kriging for Functional Data. Application to the Spatial Prediction of Salinity Curves},
+	author={Reyes, Adriana and Giraldo, Ram{\'o}n and Mateu, Jorge},
+	year = {2012},
+	volume = {35},
+	number = {3},
+	journal = {Revista Colombiana de Estad\'{\i}stica},
+	pages = {385--407}
+}
+
+@article{salazar2015spatial,
+	title={Spatial Prediction for Infinite-Dimensional Compositional Data},
+	author={Salazar, El{\'\i}as and Giraldo, Ram{\'o}n and Porcu, Emilio},
+	journal={Stochastic Environmental Research and Risk Assessment},
+	volume = {29},
+	number = {7},
+	pages={1737--1749},
+	month = {October},
+	year={2015},
+	publisher={Springer}
+}
+
+@article{lee2015spatio,
+	title={Spatio-Temporal Functional Data Analysis for Wireless Sensor Networks Data},
+	author={Lee, D-J and Zhu, Z and Toscas, P},
+	journal={Environmetrics},
+	year={2015},
+	volume ={26},
+	number = {5},
+	pages = {354--362},
+	month = {August},
+	publisher={John Wiley \& Sons}
+}
+
+@article{giraldo2012geofd,
+	title={\texttt{geofd}: an \texttt{R} Package for Function-Valued Geostatistical Prediction},
+	author={Giraldo, Ram{\'o}n and Mateu, Jorge and Delicado, Pedro},
+	journal={Revista Colombiana de Estad{\'\i}stica},
+	volume={35},
+	number={3},
+	pages={385--407},
+	year={2012},
+	publisher={Universidad Nacional de Colombia.}
+}
+
+@article{haar1910theorie,
+	title={Zur theorie der Orthogonalen Funktionensysteme},
+	author={Haar, Alfred},
+	journal={Mathematische Annalen},
+	volume={69},
+	number={3},
+	pages={331--371},
+	year={1910},
+	publisher={Springer}
+}
+
+@article{mallat1989multiresolution,
+	title={Multiresolution Approximations and Wavelet Orthonormal Bases of $L^2(\mathbb{R})$},
+	author={Mallat, Stephane G},
+	journal={Transactions of the American Mathematical Society},
+	volume={315},
+	number={1},
+	pages={69--87},
+	year={1989}
+}
+
+@article{daubechies1988orthonormal,
+	title={Orthonormal Bases of Compactly Supported Wavelets},
+	author={Daubechies, Ingrid},
+	journal={Communications on pure and applied mathematics},
+	volume={41},
+	number={7},
+	pages={909--996},
+	year={1988},
+	publisher={Wiley Online Library}
+}
+
+@manual{wavelets2004matlab,
+	title={\proglang{MATLAB} Wavelet Toolbox User's Guide. Version  4.13.},
+	author={Michel Misiti and Yves Misiti and Georges Oppenheim and Jean-Michel Poggi},
+	year={2014}
+}
+
+@manual{mapping2015matlab,
+	author = {{The MathWorks}},
+	title =    {\proglang{MATLAB} Mapping Toolbox User's Guide. Version 4.0.1.},
+	year = {2014}
+}
+
+@article{nerini2010cokriging,
+	title={Cokriging for Spatial Functional Data},
+	author={Nerini, David and Monestiez, Pascal and Mant{\'e}, Claude},
+	journal={Journal of Multivariate Analysis},
+	volume={101},
+	number={2},
+	pages={409--418},
+	year={2010},
+	publisher={Elsevier}
+}
+
+@article{gromenko2012estimation,
+	title={Estimation and Testing for Spatially Indexed Curves with Application to Ionospheric and Magnetic Field Trends},
+	author={Gromenko, Oleksandr and Kokoszka, Piotr and Zhu, Lie and Sojka, Jan and others},
+	journal={The Annals of Applied Statistics},
+	volume={6},
+	number={2},
+	pages={669--696},
+	year={2012},
+	publisher={Institute of Mathematical Statistics}
+}
+
+@article{schlather2015analysis,
+	title={Analysis, Simulation and Prediction of Multivariate Random Fields with Package \pkg{RandomFields}},
+	author={Schlather, Martin and Malinowski, Alexander and Menck, Peter J and Oesting, Marco and Strokorb, Kirstin},
+	journal={Journal of Statistical Software},
+	volume={63},
+	number={8},
+	pages={1--25},
+	year={2015},
+	month = {January}
+}
+
+@article{padoan2015analysis,
+	title={Analysis of Random Fields Using \pkg{CompRandFld}},
+	author={Padoan, Simone A and Bevilacqua, Moreno},
+	journal={Journal of Statistical Software},
+	volume={63},
+	number={9},
+	pages={1--26},
+	year={2015},
+	month = {January}
+}
+
+@book{banerjee2014hierarchical,
+	title={Hierarchical Modeling and Analysis for Spatial Data},
+	author={Banerjee, Sudipto and Carlin, Bradley P and Gelfand, Alan E},
+	year={2014},
+	publisher={Crc Press}
+}
+
+@phdthesis{giraldo2009thesis,
+	title = {Geostatistical Analysis of Functional Data},
+	author = {Giraldo, Ram\'on},
+	month = {July},
+	year = {2009},
+	school = { Universitat Politecnica	de Catalunya}
+}
+
+@book{diggle2007model,
+	title = {Model-based Geostatistics},
+	author ={Peter J Diggle and Paulo J Ribeiro},
+	publisher = {Springer},
+	year ={2007},	
+}
+
+@article{scott2009sturges,
+	title={Sturges' rule},
+	author={Scott, David W},
+	journal={Wiley Interdisciplinary Reviews: Computational Statistics},
+	volume={1},
+	number={3},
+	pages={303--306},
+	year={2009},
+	publisher={Wiley Online Library}
+}
+
+@Manual{ribeiro2016geor,
+	title = {\texttt{geoR}: Analysis of Geostatistical Data},
+	author = {Paulo J. {Ribeiro Jr} and Peter J. Diggle},
+	year = {2016},
+	note = {R package version 1.7-5.2},
+	url = {https://CRAN.R-project.org/package=geoR},
+}
+
+@book{khuri2003advanced,
+	title={Advanced calculus with applications in statistics},
+	author={Khuri, Andr{\'e} I},
+	volume={486},
+	year={2003},
+	publisher={John Wiley \& Sons}
+}
+
+@article{Vale1983,
+author="Vale, C. David
+and Maurelli, Vincent A.",
+title="Simulating multivariate nonnormal distributions",
+journal="Psychometrika",
+year="1983",
+month="Sep",
+day="01",
+volume="48",
+number="3",
+pages="465--471",
+abstract="A method for generating multivariate nonnormal distributions with specified intercorrelations and marginal means, variances, skews, and kurtoses is proposed. As an example, the method is applied to the generation of simulated scores on three psychological tests administered to a single group of individuals.",
+issn="1860-0980"
+}
+
+@Manual{ramsay2018,
+    title = {fda: Functional Data Analysis},
+    author = {J. O. Ramsay and Hadley Wickham and Spencer Graves and Giles Hooker},
+    year = {2018},
+    note = {R package version 2.4.8}
+  }

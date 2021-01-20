@@ -1,0 +1,70 @@
+\documentclass[12pt]{interact}
+
+  \usepackage{xcolor}
+	\usepackage{amsmath}
+	\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+	\usepackage{amsfonts}
+	\usepackage{amssymb}
+	\usepackage{amsthm}
+	\usepackage{multirow}
+	\usepackage[american]{babel}
+	\usepackage[utf8]{inputenc}
+	\usepackage{bm}
+	\usepackage{caption}
+	\usepackage{graphicx}
+	\usepackage{endfloat}
+	\usepackage{times}
+
+\usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
+\usepackage[caption=false]{subfig}% Support for small, `sub' figures and tables
+%\usepackage[nolists,tablesfirst]{endfloat}% To `separate' figures and tables from text if required
+%\usepackage[doublespacing]{setspace}% To produce a `double spaced' document if required
+%\setlength\parindent{24pt}% To increase paragraph indentation when line spacing is doubled
+
+\usepackage[numbers,sort&compress]{natbib}% Citation support using natbib.sty
+\bibpunct[, ]{[}{]}{,}{n}{,}{,}% Citation support using natbib.sty
+\renewcommand\bibfont{\fontsize{10}{12}\selectfont}% Bibliography support using natbib.sty
+\makeatletter% @ becomes a letter
+\def\NAT@def@citea{\def\@citea{\NAT@separator}}% Suppress spaces between citations using natbib.sty
+\makeatother% @ becomes a symbol again
+\bibliographystyle{abbrvnat1.bst}
+
+\theoremstyle{plain}% Theorem-like structures provided by amsthm.sty
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{notation}{Notation}
+
+\DeclareMathOperator{\vari}{Var}
+\DeclareMathOperator{\espe}{E}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+
+\begin{document}
+
+\articletype{TITLE PAGE}% Specify the article type or omit as appropriate
+
+\title{How to interpolate geographically located curves: a precise and straightforward kriging approach to function-valued data}
+
+\author{
+\name{Gilberto Pereira Sassi\textsuperscript{a}\thanks{CONTACT Gilberto Pereira Sassi. Email: sassi.pereira.gilberto@gmail.com} and Chang Chiann\textsuperscript{b}}
+\affil{\textsuperscript{a} Univeristy of São Paulo, São Paulo, Brazil; \textsuperscript{b} Federal University of Bahia, Salvador, Brazil}
+}
+
+\maketitle
+
+\begin{abstract}
+Functional Data Analysis has been highlighted for its in several fields of science and functional datasets can be spatially indexed curves, which are denominated Spatial Functional Data Analysis. The main goal of this paper is to supply a straightforward and precise approach to interpolate curves, i.e., the aim is to estimate a curve at an unmonitored location. It has been proved that the best linear unbiased estimator for this unsampled curve is the solution of a linear system, where the coefficients and the constant terms of the system are formed using a function called trace-variogram. In this paper, we propose the use of Legendre-Gauss quadrature to estimate the trace-variogram. Excellent numerical properties of this estimator were showed in simulation studies for normality dataset and non-normality dataset: smaller mean square error compared with the established estimation procedure. The novel estimation methodology is illustrated with a real dataset of temperature curves from 35 weather stations of Canada.
+\end{abstract}
+
+\end{document}

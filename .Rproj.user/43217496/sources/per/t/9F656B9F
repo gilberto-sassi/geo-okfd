@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1581008753557.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4087261093",
+    "id" : "9F656B9F",
+    "lastKnownWriteTime" : 1593796804,
+    "last_content_update" : 1593796804205,
+    "path" : "~/Dropbox/IdeasPaper/geoFDA/manucript/newversion/OKFD/OKFD.Rmd",
+    "project_path" : "OKFD/OKFD.Rmd",
+    "properties" : {
+        "cursorPosition" : "479,34",
+        "scrollLine" : "468"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
